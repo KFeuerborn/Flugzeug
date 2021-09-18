@@ -1,4 +1,4 @@
-import {useCallback, useRef} from 'react'
+import { useCallback, useRef } from 'react'
 
 export const useHookWithRefCallback = (callback) => {
   const ref = useRef(null)
