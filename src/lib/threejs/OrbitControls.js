@@ -1,8 +1,8 @@
 import * as THREE from 'three';
 
-const {
-	MapControls: MapControlsInput,
-	OrbitControls: OrbitControlsInput,
+export const {
+	MapControls,
+	OrbitControls,
 } = ( function () {
 
 	// Unlike TrackballControls, it maintains the "up" direction object.up (+Y by default).
@@ -1114,6 +1114,3 @@ const {
 		OrbitControls,
 	}
 } )();
-
-export const MapControls = MapControlsInput;
-export const OrbitControls = OrbitControlsInput;
