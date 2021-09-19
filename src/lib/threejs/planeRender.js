@@ -26,6 +26,7 @@ export const init = (node) => {
         camera = new THREE.PerspectiveCamera( 75, width / height, 0.1, 1000 );
 
         renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setPixelRatio( window.devicePixelRatio );
         renderer.setSize( width, height );
         node.appendChild( renderer.domElement );
 
